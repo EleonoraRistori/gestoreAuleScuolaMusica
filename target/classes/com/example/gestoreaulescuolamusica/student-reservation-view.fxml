@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gestoreaulescuolamusica.InterfaceController">
+   <children>
+      <Label layoutX="214.0" layoutY="66.0" text="Prenota un'aula">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="datePicker" layoutX="212.0" layoutY="143.0" />
+      <Label layoutX="91.0" layoutY="147.0" text="Seleziona il giorno" />
+      <Label layoutX="101.0" layoutY="212.0" text="Seleziona l'ora" />
+      <ChoiceBox fx:id="chooseHour" layoutX="214.0" layoutY="208.0" prefWidth="150.0" />
+      <Button fx:id="Book" layoutX="260.0" layoutY="277.0" mnemonicParsing="false" onMouseClicked="#BookRoom" text="Prenota" />
+      <Label fx:id="BookingLabel" layoutX="22.0" layoutY="329.0" prefHeight="36.0" prefWidth="554.0" textAlignment="CENTER">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

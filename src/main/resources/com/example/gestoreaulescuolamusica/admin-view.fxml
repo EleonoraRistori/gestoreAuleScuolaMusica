@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="481.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gestoreaulescuolamusica.InterfaceController">
+   <children>
+      <DatePicker fx:id="datePickerAdmin" layoutX="212.0" layoutY="70.0" />
+      <ChoiceBox fx:id="chooseHourAdmin" layoutX="212.0" layoutY="102.0" prefWidth="150.0" />
+      <Label layoutX="130.0" layoutY="74.0" text="Scegli la data" />
+      <Label layoutX="137.0" layoutY="106.0" text="Scegli l'ora" />
+      <Label layoutX="185.0" layoutY="32.0" text="Gestisci le prenotazioni">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="deleteUserReservation" layoutX="362.0" layoutY="410.0" mnemonicParsing="false" onMouseClicked="#deleteUserReservation" text="Cancella Prenotazione Utente" />
+      <Button fx:id="NotBookable" layoutX="65.0" layoutY="410.0" mnemonicParsing="false" onMouseClicked="#NotBookable" text="Rendi aula non prenotabile" />
+      <Button fx:id="CheckReservation" layoutX="212.0" layoutY="136.0" mnemonicParsing="false" onMouseClicked="#CheckReservation" text="Mostra prenotazioni" />
+      <ListView fx:id="AvailableRoomListAdmin" layoutX="45.0" layoutY="201.0" prefHeight="200.0" prefWidth="200.0" />
+      <ListView fx:id="bookedRoomList" layoutX="348.0" layoutY="201.0" prefHeight="200.0" prefWidth="200.0" />
+      <Button fx:id="deleteAdminReservation" layoutX="347.0" layoutY="441.0" mnemonicParsing="false" onMouseClicked="#deleteAdminReservation" text="Rendi aula nuovamente disponibile" />
+      <Label layoutX="43.0" layoutY="173.0" text="Aule disponibili" />
+      <Label layoutX="348.0" layoutY="173.0" text="Aule non disponibili" />
+      <Label fx:id="AdminLabel" layoutX="47.0" layoutY="444.0" prefHeight="18.0" prefWidth="294.0" />
+   </children>
+</AnchorPane>
