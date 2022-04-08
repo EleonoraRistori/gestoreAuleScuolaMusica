@@ -14,6 +14,7 @@ public class LoginController {
     public boolean isAnExistingUser(String username){
         return userManager.existingUser(username);
     }
+
     public String getUserPassword(String username){
         return userManager.getUserPassword(username);
     }

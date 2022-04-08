@@ -1,9 +1,9 @@
 package com.example.gestoreaulescuolamusica.Model;
 
 public class Instrument {
-    private String name;
-    private boolean heavy;
-    private boolean noisy;
+    private final String name;
+    private final boolean heavy;
+    private final boolean noisy;
 
     public Instrument(String name, boolean heavy, boolean noisy) {
         this.name = name;

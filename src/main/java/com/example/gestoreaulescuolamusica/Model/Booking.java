@@ -3,7 +3,7 @@ package com.example.gestoreaulescuolamusica.Model;
 import java.util.HashMap;
 
 public class Booking {
-    private HashMap<String, String> roomsBooked;
+    private final HashMap<String, String> roomsBooked;
 
     public Booking() {
         roomsBooked = new HashMap<>();

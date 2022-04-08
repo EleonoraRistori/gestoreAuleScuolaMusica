@@ -7,9 +7,8 @@ import com.example.gestoreaulescuolamusica.Model.*;
 import com.example.gestoreaulescuolamusica.JavaMailUtil;
 
 public class AdminController {
-    private GraphManager graphManager;
-    private Booking bookings;
-    private RoomGraph defaultGraph;
+    private final GraphManager graphManager;
+    private final RoomGraph defaultGraph;
 
     public AdminController(GraphManager graphManager) throws SQLException {
         this.graphManager = graphManager;
@@ -27,7 +26,7 @@ public class AdminController {
 
     }
     public ArrayList<String> getAvailableRooms(LocalDateTime time){
-        bookings = graphManager.pullBookings(time);
+        Booking bookings = graphManager.pullBookings(time);
 
         ArrayList<String> rooms = new ArrayList<>(defaultGraph.getAdjacentRooms().keySet());
 

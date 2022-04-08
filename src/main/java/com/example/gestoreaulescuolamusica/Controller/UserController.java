@@ -30,14 +30,14 @@ public class UserController {
         ArrayList<String> rooms = new ArrayList<>();
         if (Objects.equals(instrument.getName(), "Pianoforte")){
             for (Tag tag : tags) {
-                if (Objects.equals(tag.getCaratteristica(), "Aula con pianoforte"))
-                    rooms.add(tag.getAula());
+                if (Objects.equals(tag.getFeature(), "Aula con pianoforte"))
+                    rooms.add(tag.getRoom());
             }
         }
         else  if (Objects.equals(instrument.getName(), "Percussioni")){
             for (Tag tag : tags) {
-                if (Objects.equals(tag.getCaratteristica(), "Aula con percussioni"))
-                    rooms.add(tag.getAula());
+                if (Objects.equals(tag.getFeature(), "Aula con percussioni"))
+                    rooms.add(tag.getRoom());
             }
         }
         else {

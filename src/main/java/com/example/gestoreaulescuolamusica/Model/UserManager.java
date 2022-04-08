@@ -7,9 +7,9 @@ import java.util.Objects;
 import com.example.gestoreaulescuolamusica.DAO.UserDAO;
 
 public class UserManager {
-    private ArrayList<User> users;
-    private HashMap<String, Instrument> instruments;
-    private UserDAO userDAO;
+    private final ArrayList<User> users;
+    private final HashMap<String, Instrument> instruments;
+    private final UserDAO userDAO;
 
     public UserManager() throws SQLException {
         userDAO =  new UserDAO();

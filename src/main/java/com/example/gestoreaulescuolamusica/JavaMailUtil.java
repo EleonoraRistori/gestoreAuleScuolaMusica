@@ -7,6 +7,7 @@ import java.time.LocalDateTime;
 import java.util.Properties;
 
 public class JavaMailUtil {
+
     public static void sendDeleteReservation(String recipient, LocalDateTime time, String room) throws MessagingException {
         Properties properties = new Properties();
 

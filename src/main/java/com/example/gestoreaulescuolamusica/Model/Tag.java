@@ -1,19 +1,19 @@
 package com.example.gestoreaulescuolamusica.Model;
 
 public class Tag {
-    private String aula;
-    private String caratteristica;
+    private final String room;
+    private final String feature;
 
-    public Tag(String aula, String caratteristica) {
-        this.aula = aula;
-        this.caratteristica = caratteristica;
+    public Tag(String room, String feature) {
+        this.room = room;
+        this.feature = feature;
     }
 
-    public String getAula() {
-        return aula;
+    public String getRoom() {
+        return room;
     }
 
-    public String getCaratteristica() {
-        return caratteristica;
+    public String getFeature() {
+        return feature;
     }
 }

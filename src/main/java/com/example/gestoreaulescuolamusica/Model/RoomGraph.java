@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 public class RoomGraph {
-    private HashMap<String, ArrayList<String>> adjacentRooms;
+    private final HashMap<String, ArrayList<String>> adjacentRooms;
 
     public RoomGraph() {
         adjacentRooms = new HashMap<>();

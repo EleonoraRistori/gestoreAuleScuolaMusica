@@ -20,7 +20,7 @@ public class StudentController extends UserController {
 
     private boolean isUpperFloorRoom(String room){
         for (Tag tag : tags){
-            if(Objects.equals(tag.getAula(), room) && Objects.equals(tag.getCaratteristica(), "Piani superiori"))
+            if(Objects.equals(tag.getRoom(), room) && Objects.equals(tag.getFeature(), "Piani superiori"))
                 return true;
         }
         return false;

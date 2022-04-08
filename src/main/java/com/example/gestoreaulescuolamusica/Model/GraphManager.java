@@ -7,10 +7,10 @@ import java.util.HashMap;
 import com.example.gestoreaulescuolamusica.DAO.ModelDAO;
 
 public class GraphManager {
-    private ModelDAO modelDAO;
-    private RoomGraph defaultGraph;
-    private HashMap<LocalDateTime, Booking> scheduledRoomBooked;
-    private ArrayList<Tag> tags;
+    private final ModelDAO modelDAO;
+    private final RoomGraph defaultGraph;
+    private final HashMap<LocalDateTime, Booking> scheduledRoomBooked;
+    private final ArrayList<Tag> tags;
 
 
 
